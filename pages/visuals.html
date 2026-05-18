@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visuals — Season Health Care</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/visuals.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/ImageSVH.jpeg" alt="Logo" />
+          <div class="nav-logo-text">
+            Season Health Care<span>Vet & Animal Products</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="visuals.html" class="active">Visuals</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+          <button class="nav-hamburger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="search-overlay">
+      <div class="search-box">
+        <button class="search-close">&times;</button>
+        <h3>Search</h3>
+        <div class="search-input-wrap">
+          <input type="text" placeholder="Search..." /><button
+            class="btn btn-primary"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div
+        class="page-hero-bg"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=1400&q=80&quot;);
+        "
+      ></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span
+          class="section-label"
+          style="background: rgba(255, 255, 255, 0.15); color: #fff"
+          >Gallery</span
+        >
+        <h1>Visuals</h1>
+        <p>Browse our product and livestock imagery</p>
+      </div>
+    </div>
+
+    <!-- Visuals Layout: 3:1 ratio -->
+    <section class="section">
+      <div class="container">
+        <div class="visuals-layout">
+          <!-- Left: 3 images per row grid (3/4 width) -->
+          <div class="visuals-main">
+            <div class="visuals-grid" id="visualsGrid">
+              <div class="visual-banner animate-on-scroll" data-cat="cattle">
+                <img
+                  src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80"
+                  alt="Cattle"
+                />
+                <div class="banner-label">Cattle Health</div>
+              </div>
+              <div class="visual-banner animate-on-scroll" data-cat="poultry">
+                <img
+                  src="https://images.unsplash.com/photo-1574170609133-2a9428748059?w=600&q=80"
+                  alt="Poultry"
+                />
+                <div class="banner-label">Poultry</div>
+              </div>
+              <div class="visual-banner animate-on-scroll" data-cat="products">
+                <img
+                  src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=600&q=80"
+                  alt="Products"
+                />
+                <div class="banner-label">Products</div>
+              </div>
+              <div class="visual-banner animate-on-scroll" data-cat="cattle">
+                <img
+                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&q=80"
+                  alt="Cattle 2"
+                />
+                <div class="banner-label">Livestock</div>
+              </div>
+              <div
+                class="visual-banner animate-on-scroll"
+                data-cat="supplements"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80"
+                  alt="Supplements"
+                />
+                <div class="banner-label">Supplements</div>
+              </div>
+              <div class="visual-banner animate-on-scroll" data-cat="products">
+                <img
+                  src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80"
+                  alt="Medicine"
+                />
+                <div class="banner-label">Medicine</div>
+              </div>
+              <div class="visual-banner animate-on-scroll" data-cat="cattle">
+                <img
+                  src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80"
+                  alt="Farm"
+                />
+                <div class="banner-label">Farm Life</div>
+              </div>
+              <div class="visual-banner animate-on-scroll" data-cat="poultry">
+                <img
+                  src="https://images.unsplash.com/photo-1532188363366-3a1b2ac4a338?w=600&q=80"
+                  alt="Poultry 2"
+                />
+                <div class="banner-label">Poultry Care</div>
+              </div>
+              <div
+                class="visual-banner animate-on-scroll"
+                data-cat="supplements"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80"
+                  alt="Animal"
+                />
+                <div class="banner-label">Animal Wellness</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Sidebar (1/4 width) -->
+          <div class="visuals-sidebar">
+            <!-- Logo -->
+            <div class="sidebar-logo">
+              <img src="../assets/ImageSVH.jpeg" alt="Logo" />
+              <div>
+                <strong>Season Health Care</strong>
+                <span>Gallery Filter</span>
+              </div>
+            </div>
+
+            <!-- Filter menus -->
+            <div class="sidebar-section">
+              <h4>Filter by Category</h4>
+              <ul class="filter-list">
+                <li>
+                  <button
+                    class="filter-btn active"
+                    data-filter="all"
+                    onclick="filterGallery(this, 'all')"
+                  >
+                    <i class="fas fa-th"></i> All Images
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="filter-btn"
+                    data-filter="cattle"
+                    onclick="filterGallery(this, 'cattle')"
+                  >
+                    <i class="fas fa-horse"></i> Cattle
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="filter-btn"
+                    data-filter="poultry"
+                    onclick="filterGallery(this, 'poultry')"
+                  >
+                    <i class="fas fa-feather-alt"></i> Poultry
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="filter-btn"
+                    data-filter="products"
+                    onclick="filterGallery(this, 'products')"
+                  >
+                    <i class="fas fa-box"></i> Products
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="filter-btn"
+                    data-filter="supplements"
+                    onclick="filterGallery(this, 'supplements')"
+                  >
+                    <i class="fas fa-leaf"></i> Supplements
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-section">
+              <h4>Quick Links</h4>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="products.html"
+                    ><i class="fas fa-arrow-right"></i> Browse Products</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fas fa-arrow-right"></i> Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fas fa-arrow-right"></i> About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <img src="../assets/ImageSVH.jpeg" alt="Logo" />
+            <div class="footer-logo-name">Season Health Care</div>
+            <p class="footer-tagline">
+              Serving livestock with science,<br />technology & care since 1992.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Information</h4>
+            <p>
+              <span><i class="fas fa-map-marker-alt"></i></span> 438,
+              Mangalpuri, Kanker Khera
+            </p>
+            <p>
+              <span><i class="fas fa-phone"></i></span> +91 97587 51576
+            </p>
+            <p>
+              <span><i class="fas fa-envelope"></i></span>
+              Dharmendrakumar975875@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Season Health Care Pvt. Ltd. All rights reserved.</p>
+          <nav class="footer-bottom-links">
+            <a href="../index.html">Home</a><a href="about.html">About</a
+            ><a href="contact.html">Contact</a
+            ><a href="products.html">Products</a
+            ><a href="visuals.html">Visuals</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script>
+      function filterGallery(btn, cat) {
+        document
+          .querySelectorAll(".filter-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll(".visual-banner").forEach((el) => {
+          const show = cat === "all" || el.dataset.cat === cat;
+          el.style.display = show ? "block" : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

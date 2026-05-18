@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Season Health Care — Animal & Veterinary Healthcare</title>
+    <meta
+      name="description"
+      content="Season Health Care — India's trusted supplier of veterinary medicines, animal feed supplements, and poultry healthcare products."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/ImageSVH.jpeg" alt="Season Health Care Logo" />
+          <div class="nav-logo-text">
+            Season Health Care
+            <span>Vet & Animal Products</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/products.html">Products</a></li>
+          <li><a href="pages/visuals.html">Visuals</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <button class="nav-search-btn" title="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="nav-hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+      <div class="search-box">
+        <button class="search-close">&times;</button>
+        <h3>Search Products</h3>
+        <div class="search-input-wrap">
+          <input
+            type="text"
+            placeholder="e.g. Cattle supplement, Poultry medicine..."
+          />
+          <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== HERO SLIDER ====== -->
+    <section class="hero-slider">
+      <div class="slides-container" id="heroSlides">
+        <div
+          class="slide active"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1400&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=1400&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1574170609133-2a9428748059?w=1400&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1532188363366-3a1b2ac4a338?w=1400&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=1400&q=80&quot;);
+          "
+        >
+          <div class="slide-overlay"></div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <span
+          class="section-label"
+          style="background: rgba(255, 255, 255, 0.15); color: #fff"
+          >Trusted Since 1992</span
+        >
+        <h1>Innovative Animal<br /><em>Healthcare Solutions</em></h1>
+        <p>
+          India's leading supplier of veterinary medicines, cattle
+          supplements,<br />and poultry healthcare products for a healthier
+          livestock future.
+        </p>
+        <div class="hero-btns">
+          <a href="pages/about.html" class="btn btn-primary"
+            >Learn More <i class="fas fa-arrow-right"></i
+          ></a>
+          <a
+            href="pages/products.html"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.6)"
+            >Our Products</a
+          >
+        </div>
+      </div>
+
+      <!-- Slider dots -->
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+      </div>
+
+      <button class="slide-arrow prev" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="slide-arrow next" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </section>
+
+    <!-- ====== INTRO SECTION ====== -->
+    <section class="section intro-section">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text animate-on-scroll">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title">
+              Our Aim is Simple – Better Health, Better Productivity
+            </h2>
+            <p>
+              We feel privilege and pleasure to introduce to you
+              <strong>Season Health Care</strong>, a young and innovative Animal
+              Health Company from India, with a vision to become a strong player
+              in the Global Veterinary Industry.
+            </p>
+            <br />
+            <p>
+              A noble cause to serve the livestock with scientific, technical
+              and clinical solutions, we have come into existence. As a leading
+              Supplier, Trader and Distributor of Veterinary Medicine, Cattle
+              Veterinary Medicine, Cattle Feed Supplements & Animal Feed
+              Supplements.
+            </p>
+            <br />
+            <p>
+              We are exporters and suppliers of Animal Healthcare Products,
+              Poultry Health Care Products, animal food stuffs, poultry feed
+              supplements, poultry feed additives, nutritional supplements and
+              water sanitizer.
+            </p>
+            <br />
+            <a href="pages/about.html" class="btn btn-primary"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="intro-image animate-on-scroll">
+            <div class="intro-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=700&q=80"
+                alt="Animal Healthcare"
+              />
+              <div class="intro-badge">
+                <span class="badge-num">30+</span>
+                <span class="badge-text">Years of Trust</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== WHY CHOOSE US ====== -->
+    <section class="section section-alt why-section">
+      <div class="container text-center">
+        <span class="section-label animate-on-scroll">Why Choose Us</span>
+        <h2 class="section-title animate-on-scroll">What Sets Us Apart</h2>
+        <p class="section-desc animate-on-scroll">
+          We combine quality, innovation and care to deliver the best veterinary
+          and animal health solutions across India and globally.
+        </p>
+
+        <div class="why-grid">
+          <div class="why-card animate-on-scroll">
+            <div class="why-icon" style="background: #e8f5ed; color: #2d7a47">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>High Quality</h3>
+            <p>
+              Products sourced from trusted certified brands ensuring maximum
+              livestock productivity.
+            </p>
+          </div>
+          <div class="why-card animate-on-scroll">
+            <div class="why-icon" style="background: #fff8e1; color: #c9a84c">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24×7 Support</h3>
+            <p>
+              Round-the-clock customer assistance for all your veterinary
+              product queries and orders.
+            </p>
+          </div>
+          <div class="why-card animate-on-scroll">
+            <div class="why-icon" style="background: #e3f2fd; color: #1976d2">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Client Satisfaction</h3>
+            <p>
+              A customer-first approach that has earned us a loyal base of
+              farmers and veterinarians.
+            </p>
+          </div>
+          <div class="why-card animate-on-scroll">
+            <div class="why-icon" style="background: #fce4ec; color: #c2185b">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Dedicated Team</h3>
+            <p>
+              Expert professionals passionate about animal health and committed
+              to your success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PRODUCT RANGE ====== -->
+    <section class="section feature-section">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-image animate-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=700&q=80"
+              alt="Product Range"
+            />
+          </div>
+          <div class="feature-text animate-on-scroll">
+            <span class="section-label">Our Offerings</span>
+            <h2 class="section-title">Wide Product Range</h2>
+            <p>
+              With constant innovation and understanding of specific market
+              needs, we have evolved a wide range of products to meet our
+              customers' diverse needs globally. Our product range covers
+              injections, bolus, syrups, liquid feed supplements, mineral
+              mixtures, powders, and Chelated Minerals & Vitamins.
+            </p>
+            <br />
+            <a href="pages/products.html" class="btn btn-primary"
+              >View All Products <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== INNOVATION ====== -->
+    <section class="section section-alt feature-section">
+      <div class="container">
+        <div class="feature-grid reverse">
+          <div class="feature-text animate-on-scroll">
+            <span class="section-label">Our Approach</span>
+            <h2 class="section-title">Innovation at Heart</h2>
+            <p>
+              We create an environment that fosters creativity and openness to
+              new ideas, leading to advancement in skills, technology and
+              processes. Our research-driven approach ensures that every product
+              meets the evolving needs of modern animal husbandry across diverse
+              climates and breeds.
+            </p>
+            <br />
+            <a href="pages/about.html" class="btn btn-outline"
+              >Know More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="feature-image animate-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=700&q=80"
+              alt="Innovation"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== QUALITY ====== -->
+    <section class="section feature-section">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-image animate-on-scroll">
+            <img
+              src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=700&q=80"
+              alt="Quality"
+            />
+          </div>
+          <div class="feature-text animate-on-scroll">
+            <span class="section-label">Our Standard</span>
+            <h2 class="section-title">Quality You Can Trust</h2>
+            <p>
+              Since 1992, the Season Health Care name has been synonymous with
+              trust and reliability inherent in the word Quality. Quality is
+              ingrained in the work of our staff and all our values. Every batch
+              of products goes through stringent quality control checks before
+              reaching our customers.
+            </p>
+            <br />
+            <a href="pages/about.html" class="btn btn-primary"
+              >About Quality <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STATS BANNER ====== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Product Variants</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-num">10K+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-num">Pan India</span>
+            <span class="stat-label">Distribution</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <img src="./assets/ImageSVH.jpeg" alt="Logo" />
+            <div class="footer-logo-name">Season Health Care</div>
+            <p class="footer-tagline">
+              Serving livestock with science,<br />technology & care since 1992.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Information</h4>
+            <p>
+              <span><i class="fas fa-map-marker-alt"></i></span> 438,
+              Mangalpuri, Kanker Khera,<br />MRT. CANTT. – 250001
+            </p>
+            <p>
+              <span><i class="fas fa-phone"></i></span> +91 97587 51576
+            </p>
+            <p>
+              <span><i class="fas fa-envelope"></i></span>
+              Dharmendrakumar975875@gmail.com
+            </p>
+            <p>
+              <span><i class="fas fa-clock"></i></span> Mon – Sat: 9:00 AM –
+              6:00 PM
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Season Health Care Pvt. Ltd. All rights reserved.</p>
+          <nav class="footer-bottom-links">
+            <a href="index.html">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/products.html">Products</a>
+            <a href="pages/visuals.html">Visuals</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" title="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

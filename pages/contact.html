@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Season Health Care</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/ImageSVH.jpeg" alt="Logo" />
+          <div class="nav-logo-text">
+            Season Health Care<span>Vet & Animal Products</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="visuals.html">Visuals</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+          <button class="nav-hamburger">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="search-overlay">
+      <div class="search-box">
+        <button class="search-close">&times;</button>
+        <h3>Search</h3>
+        <div class="search-input-wrap">
+          <input type="text" placeholder="Search..." /><button
+            class="btn btn-primary"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div
+        class="page-hero-bg"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1400&q=80&quot;);
+        "
+      ></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span
+          class="section-label"
+          style="background: rgba(255, 255, 255, 0.15); color: #fff"
+          >Get in Touch</span
+        >
+        <h1>Contact Us</h1>
+        <p>We're here to help with all your animal healthcare needs</p>
+      </div>
+    </div>
+
+    <!-- Contact Main -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Form -->
+          <div class="contact-form-wrap animate-on-scroll">
+            <span class="section-label">Send a Message</span>
+            <h2 class="section-title">Let's Talk</h2>
+            <p style="margin-bottom: 32px">
+              Fill in the form and our team will get back to you within 24
+              hours.
+            </p>
+
+            <div class="contact-form">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input
+                  type="text"
+                  placeholder="e.g. Ramesh Kumar"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label>Your Email</label>
+                <input
+                  type="email"
+                  placeholder="e.g. ramesh@example.com"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <input
+                  type="text"
+                  placeholder="e.g. Inquiry about cattle supplements"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label>Your Message</label>
+                <textarea
+                  placeholder="Write your message here..."
+                  class="form-input form-textarea"
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center"
+                onclick="handleFormSubmit(event)"
+              >
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+              <div id="form-success" class="form-success" style="display: none">
+                <i class="fas fa-check-circle"></i> Thank you! We'll get back to
+                you soon.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Images -->
+          <div class="contact-images animate-on-scroll">
+            <div class="contact-img-slider" id="contactImgSlider">
+              <img
+                src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80"
+                alt="Contact 1"
+                class="contact-slide active"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&q=80"
+                alt="Contact 2"
+                class="contact-slide"
+              />
+            </div>
+
+            <!-- Info card -->
+            <div class="contact-info-card">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Address</strong>
+                  <p>
+                    438, Mangalpuri, Kanker Khera,<br />MRT. CANTT. – 250001
+                  </p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+91 97587 51576</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p>Dharmendrakumar975875@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <img src="../assets/ImageSVH.jpeg" alt="Logo" />
+            <div class="footer-logo-name">Season Health Care</div>
+            <p class="footer-tagline">
+              Serving livestock with science,<br />technology & care since 1992.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Information</h4>
+            <p>
+              <span><i class="fas fa-map-marker-alt"></i></span> 438,
+              Mangalpuri, Kanker Khera
+            </p>
+            <p>
+              <span><i class="fas fa-phone"></i></span> +91 97587 51576
+            </p>
+            <p>
+              <span><i class="fas fa-envelope"></i></span>
+              Dharmendrakumar975875@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Season Health Care Pvt. Ltd. All rights reserved.</p>
+          <nav class="footer-bottom-links">
+            <a href="../index.html">Home</a><a href="about.html">About</a
+            ><a href="contact.html">Contact</a
+            ><a href="products.html">Products</a
+            ><a href="visuals.html">Visuals</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script>
+      // Vertical image slider
+      const cSlides = document.querySelectorAll(".contact-slide");
+      let cIdx = 0;
+      setInterval(() => {
+        cSlides[cIdx].classList.remove("active");
+        cIdx = (cIdx + 1) % cSlides.length;
+        cSlides[cIdx].classList.add("active");
+      }, 5000);
+
+      function handleFormSubmit(e) {
+        e.preventDefault();
+        document.getElementById("form-success").style.display = "flex";
+        setTimeout(
+          () =>
+            (document.getElementById("form-success").style.display = "none"),
+          4000,
+        );
+      }
+    </script>
+  </body>
+</html>
