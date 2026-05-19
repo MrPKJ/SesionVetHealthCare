@@ -1,176 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Detail — Season Health Care</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/product-detail.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-
-<nav class="navbar">
-  <div class="navbar-inner">
-    <a href="../index.html" class="nav-logo">
-      <img src="https://seasonshealthcare.co.in/wp-content/uploads/2020/10/logo.png" alt="Logo">
-      <div class="nav-logo-text">Season Health Care<span>Vet & Animal Products</span></div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="products.html" class="active">Products</a></li>
-      <li><a href="visuals.html">Visuals</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="nav-search-btn"><i class="fas fa-search"></i></button>
-      <button class="nav-hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<div class="search-overlay"><div class="search-box"><button class="search-close">&times;</button><h3>Search</h3><div class="search-input-wrap"><input type="text" placeholder="Search..."><button class="btn btn-primary"><i class="fas fa-search"></i></button></div></div></div>
-
-<!-- Breadcrumb -->
-<div class="breadcrumb">
-  <div class="container">
-    <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i>
-    <a href="products.html">Products</a> <i class="fas fa-chevron-right"></i>
-    <span>Cattle Calcium Injection</span>
-  </div>
-</div>
-
-<!-- Product Main -->
-<section class="section">
-  <div class="container">
-    <div class="product-detail-grid animate-on-scroll">
-
-      <!-- Left: Image -->
-      <div class="pd-image-wrap">
-        <img src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=700&q=80" alt="Product" id="pdMainImg">
-        <div class="pd-thumbnails">
-          <img src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=200&q=80" onclick="changeImg(this)" class="thumb active">
-          <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=200&q=80" onclick="changeImg(this)" class="thumb">
-          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&q=80" onclick="changeImg(this)" class="thumb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail — Season Health Care</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="../index.html" class="nav-logo">
+          <img
+            src="https://seasonshealthcare.co.in/wp-content/uploads/2020/10/logo.png"
+            alt="Logo"
+          />
+          <div class="nav-logo-text">
+            Season Health Care<span>Vet & Animal Products</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="visuals.html">Visuals</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="nav-search-btn"><i class="fas fa-search"></i></button>
+          <button class="nav-hamburger">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-
-      <!-- Right: Info -->
-      <div class="pd-info">
-        <span class="section-label">Injection</span>
-        <h1 class="pd-title">Cattle Calcium Injection</h1>
-        <div class="pd-meta">
-          <span class="pd-badge"><i class="fas fa-check-circle"></i> In Stock</span>
-          <span class="pd-badge mfr"><i class="fas fa-industry"></i> Season Health Care</span>
-        </div>
-
-        <div class="pd-table">
-          <div class="pd-row">
-            <span class="pd-label">Name</span>
-            <span class="pd-value">Cattle Calcium Injection 30ml</span>
-          </div>
-          <div class="pd-row">
-            <span class="pd-label">Ingredients</span>
-            <span class="pd-value">Calcium Gluconate, Magnesium, Phosphorus, Vitamin D3</span>
-          </div>
-          <div class="pd-row">
-            <span class="pd-label">Used For</span>
-            <span class="pd-value">Treatment of hypocalcemia, milk fever, and calcium deficiency in cattle and buffaloes</span>
-          </div>
-          <div class="pd-row">
-            <span class="pd-label">Form</span>
-            <span class="pd-value">Injection (IV/IM)</span>
-          </div>
-          <div class="pd-row">
-            <span class="pd-label">Pack Size</span>
-            <span class="pd-value">30ml, 100ml, 450ml</span>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;">
-          <a href="contact.html" class="btn btn-primary">Enquire Now <i class="fas fa-paper-plane"></i></a>
-          <a href="products.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Products</a>
+    </nav>
+    <div class="search-overlay">
+      <div class="search-box">
+        <button class="search-close">&times;</button>
+        <h3>Search</h3>
+        <div class="search-input-wrap">
+          <input type="text" placeholder="Search..." /><button
+            class="btn btn-primary"
+          >
+            <i class="fas fa-search"></i>
+          </button>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Reviews -->
-<section class="section section-alt">
-  <div class="container">
-    <span class="section-label animate-on-scroll">Feedback</span>
-    <h2 class="section-title animate-on-scroll">Product Reviews</h2>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i>
+        <a href="products.html">Products</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Cattle Calcium Injection</span>
+      </div>
+    </div>
 
-    <div class="reviews-layout animate-on-scroll">
-      <!-- List -->
-      <div class="reviews-list">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar">R</div>
-            <div>
-              <strong>Ramesh Verma</strong>
-              <div class="stars">★★★★★</div>
+    <!-- Product Main -->
+    <section class="section">
+      <div class="container">
+        <div class="product-detail-grid animate-on-scroll">
+          <!-- Left: Image -->
+          <div class="pd-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=700&q=80"
+              alt="Product"
+              id="pdMainImg"
+            />
+            <div class="pd-thumbnails">
+              <img
+                src="https://images.unsplash.com/photo-1563213126-a4273aed2016?w=200&q=80"
+                onclick="changeImg(this)"
+                class="thumb active"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=200&q=80"
+                onclick="changeImg(this)"
+                class="thumb"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&q=80"
+                onclick="changeImg(this)"
+                class="thumb"
+              />
             </div>
           </div>
-          <p>Excellent product. My cattle recovered from milk fever within 2 hours of administration. Highly recommend Season Health Care.</p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar">S</div>
-            <div>
-              <strong>Suresh Yadav</strong>
-              <div class="stars">★★★★☆</div>
+
+          <!-- Right: Info -->
+          <div class="pd-info">
+            <span class="section-label">Injection</span>
+            <h1 class="pd-title">Cattle Calcium Injection</h1>
+            <div class="pd-meta">
+              <span class="pd-badge"
+                ><i class="fas fa-check-circle"></i> In Stock</span
+              >
+              <span class="pd-badge mfr"
+                ><i class="fas fa-industry"></i> Season Health Care</span
+              >
+            </div>
+
+            <div class="pd-table">
+              <div class="pd-row">
+                <span class="pd-label">Name</span>
+                <span class="pd-value">Cattle Calcium Injection 30ml</span>
+              </div>
+              <div class="pd-row">
+                <span class="pd-label">Ingredients</span>
+                <span class="pd-value"
+                  >Calcium Gluconate, Magnesium, Phosphorus, Vitamin D3</span
+                >
+              </div>
+              <div class="pd-row">
+                <span class="pd-label">Used For</span>
+                <span class="pd-value"
+                  >Treatment of hypocalcemia, milk fever, and calcium deficiency
+                  in cattle and buffaloes</span
+                >
+              </div>
+              <div class="pd-row">
+                <span class="pd-label">Form</span>
+                <span class="pd-value">Injection (IV/IM)</span>
+              </div>
+              <div class="pd-row">
+                <span class="pd-label">Pack Size</span>
+                <span class="pd-value">30ml, 100ml, 450ml</span>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                gap: 12px;
+                margin-top: 28px;
+                flex-wrap: wrap;
+              "
+            >
+              <a href="contact.html" class="btn btn-primary"
+                >Enquire Now <i class="fas fa-paper-plane"></i
+              ></a>
+              <a href="products.html" class="btn btn-outline"
+                ><i class="fas fa-arrow-left"></i> Back to Products</a
+              >
             </div>
           </div>
-          <p>Good quality injection. Fast delivery. The results were visible quickly. Will order again.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Write a review -->
-      <div class="review-form-wrap">
-        <h3>Write a Review</h3>
-        <div class="form-group"><label>Your Review</label><textarea placeholder="Share your experience with this product..." class="form-input form-textarea" style="min-height:100px"></textarea></div>
-        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Your Name" class="form-input"></div>
-        <div class="form-group"><label>Your Email</label><input type="email" placeholder="Your Email" class="form-input"></div>
-        <button class="btn btn-primary" onclick="this.textContent='✓ Submitted!';this.style.background='var(--green-dark)'">Submit Review <i class="fas fa-paper-plane"></i></button>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Reviews -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-label animate-on-scroll">Feedback</span>
+        <h2 class="section-title animate-on-scroll">Product Reviews</h2>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-main">
-      <div class="footer-logo">
-        <img src="https://seasonshealthcare.co.in/wp-content/uploads/2020/10/logo.png" alt="Logo">
-        <div class="footer-logo-name">Season Health Care</div>
-        <p class="footer-tagline">Serving livestock with science,<br>technology & care since 1992.</p>
-      </div>
-      <div class="footer-contact">
-        <h4>Contact Information</h4>
-        <p><span><i class="fas fa-map-marker-alt"></i></span> 438, Mangalpuri, Kanker Khera</p>
-        <p><span><i class="fas fa-phone"></i></span> +91 97587 51576</p>
-        <p><span><i class="fas fa-envelope"></i></span> Dharmendrakumar975875@gmail.com</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Season Health Care Pvt. Ltd. All rights reserved.</p>
-      <nav class="footer-bottom-links">
-        <a href="../index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="products.html">Products</a><a href="visuals.html">Visuals</a>
-      </nav>
-    </div>
-  </div>
-</footer>
-<button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+        <div class="reviews-layout animate-on-scroll">
+          <!-- List -->
+          <div class="reviews-list">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar">R</div>
+                <div>
+                  <strong>Ramesh Verma</strong>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>
+                Excellent product. My cattle recovered from milk fever within 2
+                hours of administration. Highly recommend Season Health Care.
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar">S</div>
+                <div>
+                  <strong>Suresh Yadav</strong>
+                  <div class="stars">★★★★☆</div>
+                </div>
+              </div>
+              <p>
+                Good quality injection. Fast delivery. The results were visible
+                quickly. Will order again.
+              </p>
+            </div>
+          </div>
 
-<script src="../js/main.js"></script>
-<script>
-function changeImg(el) {
-  document.getElementById('pdMainImg').src = el.src.replace('w=200','w=700');
-  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
-}
-</script>
-</body>
+          <!-- Write a review -->
+          <div class="review-form-wrap">
+            <h3>Write a Review</h3>
+            <div class="form-group">
+              <label>Your Review</label
+              ><textarea
+                placeholder="Share your experience with this product..."
+                class="form-input form-textarea"
+                style="min-height: 100px"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label>Your Name</label
+              ><input type="text" placeholder="Your Name" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label
+              ><input
+                type="email"
+                placeholder="Your Email"
+                class="form-input"
+              />
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="
+                this.textContent = '✓ Submitted!';
+                this.style.background = 'var(--green-dark)';
+              "
+            >
+              Submit Review <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <img src="../assets/ImageSVH.jpeg" alt="Logo" />
+            <div class="footer-logo-name">Sesion Vet Health Care</div>
+            <p class="footer-tagline">
+              Serving livestock with science,<br />technology & care since 1992.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Information</h4>
+            <p>
+              <span><i class="fas fa-map-marker-alt"></i></span> A.O.: H.No.
+              274, Sector-16, Rohini, New Delhi-110085
+            </p>
+            <p>
+              <span><i class="fas fa-phone"></i></span> +91 75002 73249
+            </p>
+            <p>
+              <span><i class="fas fa-envelope"></i></span>
+              SesionHealthCare19@gmail.com
+            </p>
+            <p>
+              <span><i class="fas fa-clock"></i></span> Mon – Sat: 9:00 AM –
+              6:00 PM
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Season Health Care Pvt. Ltd. All rights reserved.</p>
+          <nav class="footer-bottom-links">
+            <a href="index.html">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/products.html">Products</a>
+            <a href="pages/visuals.html">Visuals</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script>
+      function changeImg(el) {
+        document.getElementById("pdMainImg").src = el.src.replace(
+          "w=200",
+          "w=700",
+        );
+        document
+          .querySelectorAll(".thumb")
+          .forEach((t) => t.classList.remove("active"));
+        el.classList.add("active");
+      }
+    </script>
+  </body>
 </html>
